@@ -1,0 +1,32 @@
+#include <stdio.h>
+ 
+int main(void) {
+char fim;
+int contBolo=0, contCanjica=0, contMiho=0, contPamonha=0, contMoleque=0;
+    do{
+    scanf("%c",&fim);
+    
+    if(fim=='B'){
+        contBolo=contBolo+1;
+    }
+    else if (fim=='C'){
+        contCanjica=contCanjica+1;
+    }
+    else if(fim=='M'){
+        contMiho=contMiho+1;
+    }
+    else if(fim=='P'){
+        contPamonha=contPamonha+1;
+    }
+    else if(fim=='Q'){
+        contMoleque=contMoleque+1;
+    }
+    }
+    while(fim!='F');
+    printf("Bolo: %d\n", contBolo);
+    printf("Canjica: %d\n", contCanjica);
+    printf("Milho: %d\n", contMiho);
+    printf("Pamonha: %d\n", contPamonha);
+    printf("Pé de Moleque: %d\n", contMoleque);
+    return 0;
+}
